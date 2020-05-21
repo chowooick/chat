@@ -80,7 +80,7 @@ DATABASES = {
         'NAME': 'django',
         'USER': 'root',
         'PASSWORD': '740621',
-        'HOST': 'localhost',
+        'HOST': '70.105.169.242', # 'localhost',  
         'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"'
