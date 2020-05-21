@@ -1,0 +1,11 @@
+*.pyc
+*~
+__pycache__
+.virtual
+.vscode
+backup
+docs
+db.sqlite3
+/static
+.DS_Store
+.ipynb_checkpoints
