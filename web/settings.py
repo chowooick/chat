@@ -37,8 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
     'blog',
+    'chat',
 ]
+
+# Channels
+
+ASGI_APPLICATION = 'web.routing.application'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
