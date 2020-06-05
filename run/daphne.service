@@ -14,10 +14,10 @@ Group=apache
 RuntimeDirectory=daphne
 WorkingDirectory=/var/www/html/develop/chat
 ExecStart=/var/www/html/develop/chat/.virtual/bin/daphne -b 127.0.0.1 -p 8001 web.asgi:application
-ExecReload=/bin/kill -s HUP $MAINPID
-KillMode=mixed
-TimeoutStopSec=5
-PrivateTmp=true
+# ExecReload=/bin/kill -s HUP $MAINPID
+# KillMode=mixed
+# TimeoutStopSec=5
+# PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
