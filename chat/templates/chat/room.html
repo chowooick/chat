@@ -49,8 +49,11 @@
             messageInputDom.value = '';
         };
     }
-    
-    connect();
+    try {
+        connect();
+    } catch(e) {
+        connect();
+    }
 </script>
 {% endblock %}
 
