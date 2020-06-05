@@ -13,11 +13,13 @@ Group=apache
 # see http://0pointer.net/blog/dynamic-users-with-systemd.html
 RuntimeDirectory=daphne
 WorkingDirectory=/var/www/html/develop/chat
+Environment=DJANGO_SETTINGS_MODULE=web.settings
 ExecStart=/var/www/html/develop/chat/.virtual/bin/daphne -b 127.0.0.1 -p 8001 web.asgi:application
 # ExecReload=/bin/kill -s HUP $MAINPID
 # KillMode=mixed
 # TimeoutStopSec=5
 # PrivateTmp=true
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
